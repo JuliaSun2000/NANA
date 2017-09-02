@@ -26,6 +26,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
 
 db.init_app(app)
+db.create_all()
 
 app.secret_key="development-key"
 
@@ -113,5 +114,5 @@ def home():
 	
 
 if __name__=="__main__":
-	db.create_all()
+	
 	app.run(debug=True)
