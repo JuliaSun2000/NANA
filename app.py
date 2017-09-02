@@ -1,31 +1,22 @@
 from flask import Flask, render_template, request, session, redirect, url_for
-from models import db, User, Place
+from models import *
 from forms import SignupForm, LoginForm,AddressForm
 
 import os
 import psycopg2
 import urllib
 
-os.environ['DATABASE_URL'] = 'postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc'
- 
-# urllib.parse.uses_netloc.append("postgres")
-# url = urllib.parse(os.environ["DATABASE_URL"])
-
-# conn = psycopg2.connect(
-#     database=url.path[1:],
-#     user=url.username,
-#     password=url.password,
-#     host=url.hostname,
-#     port=url.port
-# )
+ # os.environ['DATABASE_URL'] = 'postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc'
 
 
 app=Flask(__name__)
 
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
-app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+# app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
 
-db.init_app(app)
+# db = SQLAlchemy(app)
+
+# db.init_app(app)
 
 
 app.secret_key="development-key"

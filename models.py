@@ -1,14 +1,28 @@
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug import generate_password_hash, check_password_hash
-from app import db
+
+from flask_script import Manager
+from flask_migrate import Migrate, MigrateCommand
+from flask import Flask
 
 import urllib
-
 import geocoder
-
 import json
 
-db=SQLAlchemy()
+
+os.environ['DATABASE_URL'] = 'postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc'
+
+app=Flask(__name__)
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
+
+db = SQLAlchemy(app)
+
+migrate = Migrate(app, db)
+
+manager = Manager(app)
+manager.add_command('db', MigrateCommand)
 
 class User(db.Model):
 	__tablename__='users'
@@ -75,3 +89,6 @@ class Place(object):
       places.append(d)
 
     return places
+
+  if __name__ == '__main__':
+    manager.run()
