@@ -22,6 +22,7 @@ os.environ['DATABASE_URL'] = 'postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44d
 
 app=Flask(__name__)
 
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
 
 db.init_app(app)
