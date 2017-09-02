@@ -4,11 +4,11 @@ from forms import SignupForm, LoginForm,AddressForm
 
 import os
 import psycopg2
-import urlparse
+import urllib
 
-os.environ['DATABASE_URL'] =postgresql-crystalline-72425 
-urlparse.uses_netloc.append("postgres")
-url = urlparse.urlparse(os.environ["DATABASE_URL"])
+os.environ['DATABASE_URL'] =postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc 
+urllib.parse.uses_netloc.append("postgres")
+url = urllib.parse(os.environ["DATABASE_URL"])
 
 conn = psycopg2.connect(
     database=url.path[1:],
