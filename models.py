@@ -9,13 +9,11 @@ import urllib
 import geocoder
 import json
 
-
-os.environ['DATABASE_URL'] = 'postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc'
-
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
-app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
+app.config['SQLALCHEMY_DATABASE_URI']='postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc'
+
 
 db = SQLAlchemy(app)
 
