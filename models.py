@@ -5,7 +5,7 @@ import urllib
 import geocoder
 import json
 
- db = SQLAlchemy()
+db = SQLAlchemy()
 
 class User(db.Model):
 	__tablename__='users'
@@ -73,5 +73,5 @@ class Place(object):
 
     return places
 
-  if __name__ == '__main__':
-    manager.run()
+  # if __name__ == '__main__':
+  #   manager.run()
