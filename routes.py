@@ -2,10 +2,27 @@ from flask import Flask, render_template, request, session, redirect, url_for
 from models import db, User, Place
 from forms import SignupForm, LoginForm,AddressForm
 
+import os
+import psycopg2
+import urlparse
+
+os.environ['DATABASE_URL'] =postgresql-crystalline-72425 
+urlparse.uses_netloc.append("postgres")
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
+
+conn = psycopg2.connect(
+    database=url.path[1:],
+    user=url.username,
+    password=url.password,
+    host=url.hostname,
+    port=url.port
+)
+
 
 app=Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://localhost/learningflask'
+app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
+
 db.init_app(app)
 
 app.secret_key="development-key"
@@ -75,7 +92,7 @@ def home():
 
 	places=[]
 	my_coordinates=(45.348473, -75.7590777,17)
-	
+
 	if request.method=='POST':
 		if form.validate()==False:
 			return render_template('home.html', form=form)
