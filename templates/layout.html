@@ -21,10 +21,18 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1 class="title">NA NA</h1>
-        <h1 class="subtitle">{% block subtitle%}{% endblock %}</h1>
-      </div>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+     <!--  <div class="container"> -->
+            <h1 class="title">NA NA</h1>
+         <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li>{% block subtitle%}{% endblock %}</li>
+
+        </ul>
+          </div>
+          </div>
+        </nav>
     </header>
     
     {% block content %}
