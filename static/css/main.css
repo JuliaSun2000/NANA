@@ -102,7 +102,7 @@ header {
 }
 
 .navbar-brand{
-  clear: right;
+
 }
 .topright{
    float: right;
@@ -114,6 +114,7 @@ header {
   font-size: 22px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 /*
 .subtitle {
@@ -308,6 +309,10 @@ header {
 
 @media (max-width: 1400px) and (min-width: 901px){
      .container-fluid {
+        width:900px;
+        margin: 0 auto;
+      }
+      .container {
         width:900px;
         margin: 0 auto;
       }
