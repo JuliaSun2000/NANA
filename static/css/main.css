@@ -8,7 +8,7 @@ html, body, h1 {
 }
 
 body {
-  
+  background-color: #f4f4f4;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -141,9 +141,6 @@ header {
   color: #3a3a3a;
 }
 
-.container{
-  background-color: #f4f4f4;
-}
 
 /*
  * Hero section 
