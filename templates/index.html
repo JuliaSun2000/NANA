@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-
+{% block subtitle%}<form action="/login"><a href="{{ url_for ('login') }}">LOG IN</a></form>{% endblock %}
 {% block content %}
   <main class="hero-section">
     <div class="container">
@@ -11,7 +11,7 @@
       </div>
 
       <div class="section-device">
-        <img src="static/img/device.png">
+        <img src="static/img/pic.jpg">
       </div>
       
       <div class="clearfix"></div>

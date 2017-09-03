@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+ {% block subtitle%} <form action="/signout"><a href="{{ url_for ('signout') }}">SIGN OUT</a></form>{% endblock %}
+
 {% block content %}
   <main class="hero-section">
     <div class="container">
@@ -34,14 +36,14 @@
           </form>
         </div>
 
-      <div id="map"></div>
+        <div id="map"></div>
       </div>
       
       <div class="clearfix"></div>
     </div>
   </main>
 
-<script>
+  <script>
     var planes = [
       {% for place in places %}
         ["<h3><a href='{{ place['url'] }}' target='_blank'>{{ place['name'] }}</a></h3> <p>{{ place['time'] }} min away</p>", {{ place['lat'] }}, {{ place['lng'] }} ],

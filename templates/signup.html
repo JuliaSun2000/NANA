@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+{% block subtitle %} <form action="/login"><a href="{{ url_for ('login')}}">LOG IN/a></form>{% endblock %}
+
 {% block content %}
 
 <main class="container signup-section">
@@ -60,6 +62,6 @@
         {{ form.submit(class="btn-primary") }}
       </form>
     </div>
-  </main
+  </main>
 
 {% endblock %}

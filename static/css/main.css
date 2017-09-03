@@ -99,9 +99,15 @@ header {
 .title {
   float: left;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 22px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+}
+
+.subtitle {
+  float: right;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 .title a, .title a:visited {
@@ -271,8 +277,9 @@ header {
 }
 
 .section-map #submit {
-  font-size: 10px;
-  padding: 5px 15px;
+  font-size: 11px;
+  padding: 7px 15px;
+  float: right;
 }
 
 #map {
