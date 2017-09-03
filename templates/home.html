@@ -43,7 +43,7 @@
     </div>
   </main>
 
-  <script>
+   <script>
     var planes = [
       {% for place in places %}
         ["<h3><a href='{{ place['url'] }}' target='_blank'>{{ place['name'] }}</a></h3> <p>{{ place['time'] }} min away</p>", {{ place['lat'] }}, {{ place['lng'] }} ],
