@@ -62,10 +62,13 @@ a {
     margin-left: -15px;
   }*/
 
-.col-md-6, .content{
-  padding-top: 20rem; 
+#device-content{
+  padding-top: 8rem; 
 }
 
+#device-img{
+  padding-top: 5rem; 
+}
 
 .btn-primary {
   background: #4285f4;
