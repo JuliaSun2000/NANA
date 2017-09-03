@@ -4,7 +4,7 @@
 
 html, body, h1 {
   margin: auto 0;
-  padding: 0;
+  /*padding: 0;*/
 }
 
 body {
@@ -57,10 +57,10 @@ a {
   width: 600px;
 }*/
 
-.row {
+/*.row {
     margin-right: -15px;
     margin-left: -15px;
-  }
+  }*/
 
 .btn-primary {
   background: #4285f4;
@@ -108,18 +108,18 @@ header {
   letter-spacing: 2.5px;
   text-transform: uppercase;
 }
-
+/*
 .subtitle {
   float: right;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 15px;
-}
+}*/
 
 .title a, .title a:visited {
   color: #3a3a3a;
 }
 
-.main-nav {
+/*.main-nav {
   float: right;
 }
 
@@ -139,7 +139,7 @@ header {
 
 .main-nav li a {
   color: #3a3a3a;
-}
+}*/
 
 
 /*

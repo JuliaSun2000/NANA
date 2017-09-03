@@ -21,10 +21,17 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar">
           <div class="container-fluid">
      <!--  <div class="container"> -->
-            <h1 class="title">NA NA</h1>
+     <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">NA NA</a>
+      </div>
+
+            <!-- <h1 class="title">NA NA</h1> -->
          <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
         <li>{% block subtitle%}{% endblock %}</li>
