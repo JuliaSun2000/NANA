@@ -14,10 +14,9 @@ body {
 
 h2 {
   
-  font-weight: 500;
+  font-weight: 300;
   
-  letter-spacing: 2em;
-  padding-top: 50em;
+  letter-spacing: -1.2px;
 }
 
 a {
