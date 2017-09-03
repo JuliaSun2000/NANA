@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
-{% block subtitle%}<form action="/login"><a href="{{ url_for ('login') }}">LOG IN</a></form>{% endblock %}
+{% block subtitle%}
+  <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url_for ('login') }}">LOG IN</a></li>
+        </ul>
+  </div>
+{% endblock %}
 {% block content %}
   <!-- <main class="hero-section">
     <div class="container">
@@ -7,18 +13,18 @@
       <div class="section-content"> -->
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4" info>
+          <div class="col-md-5" info>
             <h2>Discover places near you.</h2>
             <a href="{{ url_for ('signup') }}" class="btn-primary">Sign up</a>
             <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a> 
           </div>
 
           <!-- <div class="section-device"> -->
-          <div class="col-md-8 image">
+          <div class="col-md-7 image">
             <img src="static/img/pic.jpg" class="img-responsive">
           </div>
          </div>
-          
+
        <div class="clearfix"></div>
 
     </div>
