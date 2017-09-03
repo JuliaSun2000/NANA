@@ -101,6 +101,9 @@ header {
   padding: 25px 0;
 }
 
+.navbar-brand{
+  float: left;
+}
 .topright{
    float: right;
 }
