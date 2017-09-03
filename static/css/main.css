@@ -102,7 +102,7 @@ header {
 }
 
 .navbar-brand{
-  float: left;
+  clear: right;
 }
 .topright{
    float: right;
