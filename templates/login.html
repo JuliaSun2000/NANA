@@ -14,9 +14,9 @@
         <div class="form-group">
           {{ form.email.label }}
           	 {% if form.email.errors %}
-          	{% for error in form.email.errors%}
-          		<p class="error-message">{{ error }}</p>
-          	{% endfor%}
+          	   {% for error in form.email.errors%}
+          		  <p class="error-message">{{ error }}</p>
+          	   {% endfor%}
           {% endif%}
         
 
@@ -38,6 +38,6 @@
         {{ form.submit(class="btn-primary") }}
       </form>
     </div>
-  </main
+  </main>
 
 {% endblock %}

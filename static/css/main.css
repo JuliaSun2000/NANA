@@ -24,10 +24,10 @@ a {
   display: inline-block;
 }
 
-.container {
+/*.container {
   width: 1000px;
   margin: 0 auto;
-}
+}*/
 
 .pull-left {
   float: left;
@@ -37,7 +37,7 @@ a {
   float: right;
 }
 
-.clearfix {
+/*.clearfix {
   clear: both;
 }
 
@@ -55,7 +55,12 @@ a {
 
 .section-device img {
   width: 600px;
-}
+}*/
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 
 .btn-primary {
   background: #4285f4;
@@ -141,14 +146,14 @@ header {
  * Hero section 
  */
 
-.hero-section .section-content {
+/*.hero-section .section-content {
   position: relative;
   top: 100px;
 }
 
 .hero-section .section-content h2 {
   font-size: 40px;
-}
+}*/
 
 .hero-section .section-content .btn-primary {
   margin-right: 10px;
@@ -293,3 +298,10 @@ header {
 .leaflet-popup-content p {
   margin: 10px 0 ;
 }
+
+@media (max-width: 1400px) and (min-width: 901px){
+     .container-fluid {
+        width:900px;
+        margin: 0 auto;
+      }
+  }
