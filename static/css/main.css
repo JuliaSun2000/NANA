@@ -14,9 +14,10 @@ body {
 
 h2 {
   
-  font-weight: 300;
+  font-weight: 500;
   
-  letter-spacing: -1.2px;
+  letter-spacing: 2em;
+  padding-top: 50em;
 }
 
 a {
@@ -98,7 +99,7 @@ a {
 
 header {
   background-color: #fff;
-  padding: 25px 0;
+  padding: 5em 0;
 }
 
 .title {
