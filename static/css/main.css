@@ -250,12 +250,12 @@ header {
 
 .section-tabs {
   float: left;
-  width: 15%;
+  width: 35%;
 }
 
 .section-tabs .places {
   margin-top: 62px;
-  padding-right: 5rem;
+  padding-right: 2rem;
 }
 
 .section-tabs .places a,
@@ -280,7 +280,7 @@ header {
 
 .section-map {
   float: right;
-  width: 660px;
+  width: 60%;
 }
 
 .section-map .nav {
@@ -304,7 +304,7 @@ header {
 }
 
 #map {
-  height: 500rem;
+  height: 100rem;
 }
 
 .leaflet-popup-content h3 {
