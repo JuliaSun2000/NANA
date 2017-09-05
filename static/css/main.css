@@ -109,9 +109,6 @@ header {
   padding: 25px 0;
 }
 
-.navbar-brand{
-
-}
 .topright{
    float: right;
 }
@@ -135,27 +132,6 @@ header {
   color: #3a3a3a;
 }
 
-.main-nav {
-  float: right;
-}
-
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav li {
-  display: inline-block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.main-nav li a {
-  color: #3a3a3a;
-}
 
 
 /*
@@ -255,7 +231,7 @@ header {
 
 .section-tabs .places {
   margin-top: 62px;
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 .section-tabs .places a,
@@ -280,7 +256,7 @@ header {
 
 .section-map {
   float: right;
-  width: 60%;
+  width: 62%;
 }
 
 .section-map .nav {
@@ -304,7 +280,7 @@ header {
 }
 
 #map {
-  height: 50rem;
+  height: 45rem;
 }
 
 .leaflet-popup-content h3 {
@@ -329,6 +305,61 @@ header {
         width:700px;
         margin: 0 auto;
       }
+
+  .section-tabs {
+  float: left;
+  width: 100%;
+}
+
+.section-tabs .places {
+  margin-top: 62px;
+  padding-right: 1.5rem;
+}
+
+.section-tabs .places a,
+.section-tabs .places a:visited {
+  color: #3372df; 
+}
+
+
+.section-tabs article {
+  margin-bottom: 20px;
+}
+
+.section-tabs article .name {
+  font-size: 18px;
+}
+
+.section-tabs article .walking-distance {
+  color: #6e6e6e;
+  font-size: 13px;
+  margin: 0;
+}
+
+.section-map {
+  float: right;
+  width: 100%;
+}
+
+.section-map .nav {
+  padding: 20px 0;
+}
+
+.section-map .form-group {
+  display: inline;
+}
+
+.section-map #address {
+  font-size: 14px;
+  margin-right: 10px;
+  width: 80%;
+}
+
+.section-map #submit {
+  font-size: 11px;
+  padding: 7px 15px;
+  float: right;
+}
 
 }
 
