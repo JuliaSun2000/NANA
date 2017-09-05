@@ -296,7 +296,7 @@ header {
 
 
 
-@media all and (min-width:701px) and (max-width:900px){
+@media (min-width:701px) and (max-width:900px){
   .container-fluid {
         width:700px;
         margin: 0 auto;
@@ -365,16 +365,16 @@ header {
 
 @media (max-width: 1400px) and (min-width: 901px){
      .container-fluid {
-        width:900px;
+        width:1200px;
         margin: 0 auto;
       }
       .container {
-        width:900px;
+        width:1200px;
         margin: 0 auto;
       }
   }
 
-@media all and (min-width:1401px){
+@media (min-width:1401px){
   .container-fluid {
         width:1400px;
         margin: 0 auto;
