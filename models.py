@@ -27,8 +27,7 @@ class User(db.Model):
 	def check_password(self, password):
 		return check_password_hash(self.pwdhash, password)
 
-# p = Place()
-# places = p.query("1600 Amphitheater Parkway Mountain View CA")
+
 class Place(object):
   def meters_to_walking_time(self, meters):
     # 80 meters is one minute walking time
@@ -44,7 +43,7 @@ class Place(object):
   def query(self, address):
     lat, lng = self.address_to_latlng(address)
     
-    query_url = 'https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gsradius=5000&gscoord={0}%7C{1}&gslimit=20&format=json'.format(lat, lng)
+    query_url = 'https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gsradius=5000&gscoord={0}%7C{1}&gslimit=8&format=json'.format(lat, lng)
     g = urllib.request.urlopen(query_url)
     results = g.read()
     g.close()
@@ -72,6 +71,3 @@ class Place(object):
       places.append(d)
 
     return places
-
-  # if __name__ == '__main__':
-  #   manager.run()
