@@ -3,12 +3,11 @@
  {% block subtitle%} <a href="{{ url_for ('signout') }}">SIGN OUT</a>{% endblock %}
 
 {% block content %}
+  
   <main class="hero-section">
     <div class="container">
       
       <div class="section-tabs">
-     <!--  <div class="container container-fluid">
-        <div class="row"> -->
         <div class="places">
           {% for place in places %}
             <article>
@@ -39,11 +38,9 @@
         </div>
 
         <div id="map"></div>
-      <!-- </div> -->
+      </div>
       
       <div class="clearfix"></div>
-      <!-- </div>
-      </div> -->
     </div>
   </main>
 
@@ -75,8 +72,8 @@
 });
 
    var greenIcon = new LeafIcon({iconUrl: 'static/img/leaf-green.png'}),
-    redIcon = new LeafIcon({iconUrl: 'static/img/leaf-red.png'}),
-    orangeIcon = new LeafIcon({iconUrl: 'static/img/leaf-orange.png'});
+	    redIcon = new LeafIcon({iconUrl: 'static/img/leaf-red.png'}),
+	    orangeIcon = new LeafIcon({iconUrl: 'static/img/leaf-orange.png'});
 
     for (var i = 0; i < planes.length; i++) {
     	if(i%2==0){

@@ -64,6 +64,7 @@ a {
 
 #device-content{
   padding-top: 8rem; 
+
 }
 
 #device-img{
@@ -121,12 +122,6 @@ header {
   text-transform: uppercase;
   font-weight: 700;
 }
-/*
-.subtitle {
-  float: right;
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}*/
 
 .title a, .title a:visited {
   color: #3a3a3a;
@@ -184,8 +179,8 @@ header {
   background-color: transparent;
   color: #3a3a3a;
   font-size: 18px;
-  padding: 5px 0;
-  width: 100%;
+  padding: 5px 1rem;
+  width: 80%;
 }
 
 .form-group input:focus {
@@ -224,7 +219,7 @@ header {
  * Home
  */
 
-.section-tabs {
+ .section-tabs {
   float: left;
   width: 35%;
 }
@@ -280,7 +275,7 @@ header {
 }
 
 #map {
-  height: 45rem;
+  height: 50rem;
 }
 
 .leaflet-popup-content h3 {
@@ -296,83 +291,70 @@ header {
 
 
 
-@media (min-width:701px) and (max-width:900px){
-  .container-fluid {
-        width:700px;
-        margin: 0 auto;
-      }
-      .container {
-        width:700px;
-        margin: 0 auto;
-      }
-
-  .section-tabs {
-  float: left;
-  width: 100%;
+@media (max-width:700px){
+  body {
+    padding: 0;
+    margin: 0;
 }
-
-.section-tabs .places {
-  margin-top: 62px;
-  padding-right: 1.5rem;
-}
-
-.section-tabs .places a,
-.section-tabs .places a:visited {
-  color: #3372df; 
-}
-
-
-.section-tabs article {
-  margin-bottom: 20px;
-}
-
-.section-tabs article .name {
-  font-size: 18px;
-}
-
-.section-tabs article .walking-distance {
-  color: #6e6e6e;
-  font-size: 13px;
-  margin: 0;
-}
-
-.section-map {
-  float: right;
-  width: 100%;
+html, body, #map {
+    height: 100vh;
+    width: 100vw;
 }
 
 .section-map .nav {
-  padding: 20px 0;
+  padding-bottom: : 5px;
+}
+.section-map #submit {
+  font-size: 12px;
+  padding: 7px 15px;
+  float: right;
+}
+.section-map #address {
+  font-size: 14px;
+  margin-right: 0;
+  width: 60%;
 }
 
+.section-map {
+  width: 100%;
+  position: absolute;
+  top: 7rem; 
+}
+  .section-tabs {
+  width: 100%;
+}
 .section-map .form-group {
   display: inline;
 }
 
-.section-map #address {
-  font-size: 14px;
-  margin-right: 10px;
-  width: 80%;
+#map{
+  height: 20rem;
 }
 
-.section-map #submit {
-  font-size: 11px;
-  padding: 7px 15px;
-  float: right;
+
+ .section-tabs {
+  width: 100%;
+  position: absolute;
+  top: 30rem; 
 }
+
+
 
 }
 
 @media (max-width: 1400px) and (min-width: 901px){
      .container-fluid {
-        width:1200px;
+        width:1000px;
         margin: 0 auto;
       }
       .container {
-        width:1200px;
+        width:1000px;
         margin: 0 auto;
       }
-  }
+
+     
+
+}
 
 @media (min-width:1401px){
   .container-fluid {
@@ -383,4 +365,6 @@ header {
         width:1400px;
         margin: 0 auto;
       }
+
+     
 }
