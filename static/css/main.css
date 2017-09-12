@@ -24,11 +24,6 @@ a {
   display: inline-block;
 }
 
-/*.container {
-  width: 1000px;
-  margin: 0 auto;
-}*/
-
 .pull-left {
   float: left;
 }
@@ -36,31 +31,6 @@ a {
 .pull-right {
   float: right;
 }
-
-/*.clearfix {
-  clear: both;
-}
-
-.section-content {
-  color: #3a3a3a;
-  float: left;
-  width: 340px;
-}
-
-.section-device {
-  float: right;
-  position: relative;
-  top: 65px;
-}
-
-.section-device img {
-  width: 600px;
-}*/
-
-/*.row {
-    margin-right: -15px;
-    margin-left: -15px;
-  }*/
 
 #device-content{
   padding-top: 8rem; 
@@ -127,21 +97,6 @@ header {
   color: #3a3a3a;
 }
 
-
-
-/*
- * Hero section 
- */
-
-/*.hero-section .section-content {
-  position: relative;
-  top: 100px;
-}
-
-.hero-section .section-content h2 {
-  font-size: 40px;
-}*/
-
 .hero-section .section-content .btn-primary {
   margin-right: 10px;
 }
@@ -202,7 +157,7 @@ header {
 
 
 /*
- * Sign up
+ * Abount
  */ 
 
 .about-section h2 {
@@ -286,11 +241,6 @@ header {
   margin: 10px 0 ;
 }
 
-
-
-
-
-
 @media (max-width:700px){
   body {
     padding: 0;
@@ -351,9 +301,6 @@ html, body, #map {
         width:1000px;
         margin: 0 auto;
       }
-
-     
-
 }
 
 @media (min-width:1401px){
@@ -364,7 +311,5 @@ html, body, #map {
       .container {
         width:1400px;
         margin: 0 auto;
-      }
-
-     
+      }     
 }
