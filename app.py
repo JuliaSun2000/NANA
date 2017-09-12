@@ -6,16 +6,16 @@ import os
 import psycopg2
 import urllib
 
-os.environ['DATABASE_URL'] = 'postgres://piwiohpehwhqfq:c6d305ca04cf48a034aec44dcfb06917f9cdbdd05e6c804a6b3714a664c8fe09@ec2-23-23-220-163.compute-1.amazonaws.com:5432/da1og5ol5cmrpc'
+os.environ['DATABASE_URL'] = 'postgres://your environment variable'
 
 app=Flask(__name__)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
-#app.config['SQLALCHEMY_DATABASE_URI']='postgresql://localhost/learningflask'
+#app.config['SQLALCHEMY_DATABASE_URI']='postgresql://localhost/nana'
 db = SQLAlchemy(app)
 
-app.secret_key="I-am-a-secret"
+app.secret_key="your secret key"
 
 @app.route("/")
 def index():
