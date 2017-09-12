@@ -56,7 +56,7 @@
           	{% endfor%}
           {% endif%}
         
-          {{ form.password }}
+          {{ form.password(placeholder="at least six charactors long") }}
         </div>
 
         {{ form.submit(class="btn-primary") }}
