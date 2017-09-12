@@ -15,7 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI']=os.environ['DATABASE_URL']
 #app.config['SQLALCHEMY_DATABASE_URI']='postgresql://localhost/learningflask'
 db = SQLAlchemy(app)
 
-app.secret_key="development-key"
+app.secret_key="I-am-a-secret"
 
 @app.route("/")
 def index():
@@ -89,9 +89,9 @@ def home():
 		else:
 			address=form.address.data
 
-			p=Place()
-			my_coordinates=p.address_to_latlng(address)
-			places=p.query(address)
+			p_obj=Place()
+			my_coordinates=p_obj.address_to_latlng(address)
+			places=p_obj.query(address)
 
 			return render_template('home.html', form=form, my_coordinates=my_coordinates, places=places)
 
@@ -101,4 +101,4 @@ def home():
 	
 
 if __name__=="__main__":
-	app.run(debug=True)
+	app.run()
